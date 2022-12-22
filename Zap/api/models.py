@@ -15,9 +15,9 @@ def generate_unique_code():
 
 class User(models.Model):
     code=models.CharField(max_length=8,default=generate_unique_code ,unique=True)
-    stat=models.CharField(max_length=8 ,unique=True)#Status of the id of the charging station if engaged None if not engaged
-    phone = models.IntegerField(max_length=10, unique=True)
-    charge_stat = models.IntegerField(max_length=3, default=0,null=False)
+    stat=models.CharField(default='', max_length=8 ,unique=True)#Status of the id of the charging station if engaged None if not engaged
+    phone = models.IntegerField(unique=True)
+    charge_stat = models.IntegerField(default=0,null=False)
 
 class Stat(models.Model):
     stat = models.CharField(max_length=8,default=generate_unique_code ,unique=True)
