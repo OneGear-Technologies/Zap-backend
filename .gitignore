@@ -1,2 +1,5 @@
 env/
 Zap/Zap/__pycache__/
+Zap/api/migrations/__pycache__/
+Zap/api/__pycache__/
+Zap/db.sqlite3
