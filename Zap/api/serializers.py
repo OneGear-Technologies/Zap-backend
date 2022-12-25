@@ -5,14 +5,6 @@ from django.contrib.auth.password_validation import validate_password
 
 
 class RegisterSerializer(serializers.ModelSerializer):
-    def generate_unique_code():
-        length=6
-        while True:
-            code = np.random.randint(100,size=(8))
-            if User.objects.filter(id=code).count() == 0:
-                break
-
-        return code
 
     username = serializers.IntegerField(
             validators=[UniqueValidator(queryset=User.objects.all())],

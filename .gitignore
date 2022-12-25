@@ -4,6 +4,7 @@ Zap/api/migrations/__pycache__/
 Zap/api/__pycache__/
 Zap/db.sqlite3
 
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -168,3 +169,4 @@ cython_debug/
 Footer
 Zap/api/__pycache__/__init__.cpython-38.pyc
 Zap/api/__pycache__/__init__.cpython-38.pyc
+Zap/api/__pycache__/serializers.cpython-38.pyc
