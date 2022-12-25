@@ -166,3 +166,5 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 Footer
+Zap/api/__pycache__/__init__.cpython-38.pyc
+Zap/api/__pycache__/__init__.cpython-38.pyc
