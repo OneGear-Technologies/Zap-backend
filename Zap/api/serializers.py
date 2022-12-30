@@ -57,4 +57,4 @@ class CreateWalletSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Wallet
-        fields = ['amount','wid']
+        fields = '__all__'
