@@ -17,7 +17,7 @@ class CreateWallet(APIView):
 
         serializer = self.serializer_class(data=request.data)
         if serializer.is_valid():
-            uid = get_object_or_404(User, username=request.user)
+            uid = get_object_or_404(User, username=request.user.username)
             wid = serializer.data.get('wid')
             amount = serializer.data.get('amount')
             queryset = Wallet.objects.filter(wid=wid)
