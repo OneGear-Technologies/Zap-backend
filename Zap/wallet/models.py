@@ -6,4 +6,4 @@ class Wallet(models.Model):
 	wid = models.IntegerField()
 	amount= models.IntegerField()
 	def __str__(self):
-		return self.wid
+		return str(self.wid)
